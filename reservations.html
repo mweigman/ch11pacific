@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Pacific Trails Resort :: Reservations </title>
+    <meta charset="uft 8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pacific.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta name="author" content="Melissa Weigman">
+</head>
+<body>
+<div id="wrapper">
+    <header>
+        <h1> Pacific Trails Resort </h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html"> Home </a></li>
+            <li><a href="yurts.html"> Yurts </a></li>
+            <li><a href="activities.html"> Activities </a></li>
+            <li><a href="reservations.html"> Reservations </a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2> Reservations at Pacific Trails </h2>
+        <h3> Contact Us Today!</h3>
+
+        <p>Required fields are marked with an asterisk *</p>
+
+        <form method="post" action="https://webdevbasics.net/scripts/pacific.php">
+            <label for="myFName">*First Name:</label>
+            <input id="myFName" name="myFName" type="text" required>
+            <label for="myLName">*Last Name:</label>
+            <input id="myLName" name="myLName" type="text" required>
+            <label for="myEmail">*E-Mail:</label>
+            <input id="myEmail" name="myEmail" type="email" size="35" required>
+            <label for="myPhone">Phone:</label>
+            <input id="myPhone" name="myPhone" type="tel" maxlength="12">
+            <label for="myArrival">Arrival Date:</label>
+            <input id="myArrival" name="myArrival" type="data">
+            <label for="myNights">Nights:</label>
+            <input id="myNights" name="myNights" type="number" min="1" max="14">
+            <label for="myComments">*Comments:</label>
+            <textarea id="myComments" name="myComments" rows="2" col="30" required></textarea>
+            <input type="submit" value="Submit">
+        </form>
+
+        <div id="contact">
+            <span class="resort"> Pacific Trails Resort </span> <br>
+            12010 Pacific Trails Road <br>
+            Zephyr, CA 95555 <br>
+        </div>
+        <p>
+            <a id="mobile" href="tel:888-555-5555">888-555-5555</a>
+            <span id="desktop">888-555-5555</span>
+
+    </main>
+    <footer>
+        Copyright &copy; 2018 Melissa Weigman
+        <br> <em> <a href="mailto:mweigman1@my.wctc.edu"> mweigman1@my.wctc.edu </a> </em>
+    </footer>
+</div>
+</body>
+</html>

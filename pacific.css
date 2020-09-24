@@ -1,0 +1,363 @@
+/* ---- Pacific Trails Resort Case Study _ Chapter 4 ---- */
+
+header, main, nav, footer, figure, figcaption, aside, section, article {
+    display: block;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #B8DBED;
+    color: #666666;
+}
+
+
+header {
+    background-color: #000033;
+    color: #FFFFFF;
+    height: 120px;
+    text-align: center;
+    padding-top: 30px;
+    padding-left: 3em;
+}
+
+nav {
+    font-weight: bold;
+    padding: 1.5em;
+    font-size: 120%;
+    float: left;
+    width: 160px;
+}
+
+nav a {
+    text-decoration: none;
+    transition: color 3s ease-in-out;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+    font-size: 1.2em;
+}
+
+nav a:link {
+    color: #5C7FA3;
+}
+
+nav a:visited {
+    color: #344873;
+}
+
+nav a:hover {
+    color: #A52A2A;
+}
+
+h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: 3em;
+    letter-spacing: 0.25em;
+}
+
+h2 {
+    color: #3399cc;
+    font-family: Georgia, "Times New Roman", serif;
+    text-shadow: 1px 1px 1px #CCCCCC;
+}
+
+h3 {
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+main ul {
+    list-style-image: url(marker.gif);
+}
+
+dt {
+    color: #000033;
+}
+
+.resort {
+    color: #5C7FA3;
+    font-weight: bold;
+}
+
+#contact {
+    font-size: 90%;
+}
+
+main {
+    padding: 1px 20px 20px;
+    display: block;
+    background-color: #FFFFFF;
+    margin-left: 190px;
+    padding-left: 30px;
+}
+
+footer {
+    font-size: 75%;
+    font-style: italic;
+    text-align: center;
+    font-family: Georgia, "Times New Roman", serif;
+    padding: 20px;
+    margin-left: 190px;
+    background-color: #FFFFFF;
+}
+
+#wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    background-color: #90C7E3;
+    border: #000033;
+    border-width: 1px;
+    background-image: linear-gradient(to bottom, #FFFFFF, #90C7E3);
+    min-width: 960px;
+    max-width: 2048px;
+    box-shadow: 3px 3px 3px #333333;
+}
+
+#homehero {
+    height: 300px;
+    background-image: url(coast2.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-left: 190px;
+}
+
+#yurthero {
+    height: 300px;
+    background-image: url("yurthero.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-left: 190px;
+}
+
+#trailhero {
+    height: 300px;
+    background-image: url(trail.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-left: 190px;
+}
+
+table {
+    border: 2px solid #3399CC;
+    border-collapse: collapse;
+}
+
+td, th {
+    padding: 0.5em;
+    border: 2px solid #3399CC;
+}
+
+td {
+    text-align: center;
+}
+
+.text {
+    text-align: left;
+}
+
+tr:nth-of-type(odd) {
+    background-color: #F5FAFC;
+}
+
+#gallery {
+    position: relative;
+}
+
+#gallery ul {
+    list-style-type: none;
+    width: 300px;
+}
+
+#gallery li {
+    display: inline;
+    float: left;
+    padding: 10px;
+}
+
+#gallery img {
+    border-style: none;
+}
+
+#gallery a {
+    text-decoration: none;
+    font-style: italic;
+    color: #eaeaea;
+}
+
+#gallery span {
+    position: absolute;
+    left: -1000px;
+    opacity: 0;
+    transition: opacity 3s ease-in-out;
+}
+
+#gallery a:hover span {
+    position: absolute;
+    top: 16px;
+    left: 320px;
+    text-align: center;
+    opacity: 1;
+}
+
+figure {
+    position: absolute;
+    left: 280px;
+    text-align: center;
+    opacity: .25;
+}
+
+video, embed, video a {
+    float: right;
+    padding-left: 20px;
+    outline: none;
+}
+
+
+/* DESKTOP DISPLAY CONFIGURATION */
+
+#mobile {
+    display: none;
+}
+
+#desktop {
+    display: inline;
+}
+
+label {
+    float: left;
+    display: block;
+    text-align: right;
+    width: 120px;
+    padding-right: 10px;
+}
+
+input, textarea {
+    display: block;
+    margin-bottom: 20px;
+}
+
+input[type="submit"] {
+    margin-left: 130px;
+}
+
+
+
+/* TABLET DISPLAY CONFIGURATION */
+
+@media only screen and (max-width: 64em) {
+
+    body {
+        margin: 0;
+        background-color: #FFFFFF;
+    }
+
+    #wrapper {
+        min-width: 0;
+        width: auto;
+        box-shadow: none;
+        border: none;
+    }
+
+    header {
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        padding-left: 0;
+        height: auto;
+    }
+
+    h1 {
+        letter-spacing: 0.1em;
+    }
+
+    main {
+        margin-left: 0;
+    }
+
+    nav {
+        float: none;
+        width: auto;
+        text-align: center;
+        padding: 0.5em;
+    }
+
+    nav li {
+        display: inline;
+        padding-top: 0.25em;
+        padding-bottom: 0.25em;
+        padding-left: 0.75em;
+        padding-right: 0.75em;
+    }
+
+    #homehero, #yurthero, #trailhero {
+        margin-left: 0;
+        height: 200px;
+    }
+
+    footer {
+        margin-left: 0;
+    }
+}
+
+/* SMARTPHONE DISPLAY CONFIGURATION */
+
+@media only screen and (max-width: 37.5em) {
+
+    main {
+        padding-top: 0.1em;
+        padding-bottom: 0.1em;
+        padding-right: 1em;
+        padding-left: 1em;
+        font-size: 90%;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    nav {
+        padding: 0;
+    }
+
+    nav li {
+        display: block;
+        margin: 0;
+        border-bottom-color: #330000;
+        border-bottom-width: 2px;
+    }
+
+    nav a:link {
+        display: block;
+    }
+
+    #homehero, #yurthero, #trailhero {
+        background-image: none;
+        height: 0;
+    }
+
+    #mobile {
+        display: inline;
+    }
+
+    #desktop {
+        display: none;
+    }
+
+    label {
+        float: none;
+        text-align: left;
+    }
+
+    input[type="submit"] {
+        margin-left: 0;
+        max-width: 37.5em;
+    }
+}
